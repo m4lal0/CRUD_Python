@@ -1,4 +1,5 @@
 # By @M4lal0
+# -*- coding: utf-8 -*-
 
 import sys,csv,os
 
