@@ -3,7 +3,7 @@
 <p align="center">
 <img src="images/CRUD.png"
 	alt="CRUD"
-	width="200"
+	width="600"
 	style="float: left; margin-right: 10px;" />
 </p>
 
