@@ -3,7 +3,7 @@
 <p align="center">
 <img src="images/CRUD.png"
 	alt="CRUD"
-	width="600"
+	width="400"
 	style="float: left; margin-right: 10px;" />
 </p>
 
@@ -12,4 +12,4 @@ Pequeño programa que realiza CRUD (Create, Read, Update, Delete) de un archivo 
 > Más adelante modificaré el código para mejorarlo.
 
 ---
-⌨️ con ❤️ por [Malalo](https://github.com/m4lal0)
+⌨️ por [Malalo](https://github.com/m4lal0)
