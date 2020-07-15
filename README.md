@@ -7,7 +7,7 @@
 	style="float: left; margin-right: 5px;" />
 </p>
 
-Pequeño programa que realiza CRUD (Create, Read, Update, Delete) de un archivo CSV, para prácticar sobre el lenguaje Python.
+Pequeño programa en Python que realiza CRUD (Create, Read, Update, Delete) de un archivo CSV.
 
 > Más adelante modificaré el código para mejorarlo.
 
