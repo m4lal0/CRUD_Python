@@ -4,7 +4,7 @@
 <img src="images/CRUD.png"
 	alt="CRUD"
 	width="400"
-	style="float: left; margin-right: 10px;" />
+	style="float: left; margin-right: 5px;" />
 </p>
 
 Pequeño programa que realiza CRUD (Create, Read, Update, Delete) de un archivo CSV, para prácticar sobre el lenguaje Python.
