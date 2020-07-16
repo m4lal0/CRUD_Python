@@ -1,7 +1,8 @@
+#!/usr/bin/python3
 # By @M4lal0
 # -*- coding: utf-8 -*-
 
-import sys,csv,os
+import sys, csv, os
 
 
 class bcolors:
@@ -10,9 +11,9 @@ class bcolors:
     OKGREEN = '\033[92m'
     WARNING = '\033[93m'
     FAIL = '\033[91m'
-    ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+    ENDC = '\033[0m'
 
 
 CLIENT_TABLE = '.clients.csv'
@@ -153,7 +154,7 @@ if __name__ == '__main__':
         else:
             print(bcolors.FAIL+ "The client: {0} is not in our client´s list".format(client_name) + bcolors.ENDC)
     elif command == "E":
-        sys.exit()
+        sys.exit(1)
     else:
         print(bcolors.FAIL + "Invalid command" + bcolors.ENDC)
     
