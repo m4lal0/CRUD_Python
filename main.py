@@ -6,13 +6,14 @@ import sys, csv, os
 
 
 class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    BOLD = '\033[1m'
+    PURPLE = '\033[95m'
+    BLUE = '\033[94m'
+    YELLOW = '\033[93m'
+    GREEN = '\033[92m'
+    RED = '\033[91m'
+    DARKCYAN = '\033[36m'
     UNDERLINE = '\033[4m'
+    BOLD = '\033[1m'
     ENDC = '\033[0m'
 
 
@@ -45,7 +46,7 @@ def create_client(client):
     if client not in clients:
         clients.append(client)
     else:
-        print(bcolors.FAIL + "Client already is in the client´s list" + bcolors.ENDC)
+        print(bcolors.RED + "Client already is in the client´s list" + bcolors.ENDC)
 
 
 def update_client(client_id, updated_client):
@@ -54,7 +55,7 @@ def update_client(client_id, updated_client):
     if len(clients) - 1 >= client_id:
         clients[client_id] = updated_client
     else:
-        print(bcolors.FAIL + "Client is not in client´s list" + bcolors.ENDC)
+        print(bcolors.RED + "Client is not in client´s list" + bcolors.ENDC)
 
 
 def delete_client(client_id):
@@ -113,7 +114,7 @@ def display_banner():
     banner +="  \▓▓▓▓▓▓ \▓▓   \▓▓ \▓▓▓▓▓▓ \▓▓▓▓▓▓▓ \n"
     banner +="--[ Create | Read | Update | Delete ]--\n"
     banner +="--[             v20.01              ]--\n"
-    return print(bcolors.HEADER + banner + bcolors.ENDC)
+    return print(bcolors.PURPLE + banner + bcolors.ENDC)
 
 
 def display_menu():
@@ -150,12 +151,12 @@ if __name__ == '__main__':
         client_name = _get_client_field('name')
         found = search_client(client_name)
         if found:
-            print(bcolors.OKGREEN + "The client is in the client´s list" + bcolors.ENDC)
+            print(bcolors.GREEN + "The client is in the client´s list" + bcolors.ENDC)
         else:
-            print(bcolors.FAIL+ "The client: {0} is not in our client´s list".format(client_name) + bcolors.ENDC)
+            print(bcolors.RED + "The client: {0} is not in our client´s list".format(client_name) + bcolors.ENDC)
     elif command == "E":
         sys.exit(1)
     else:
-        print(bcolors.FAIL + "Invalid command" + bcolors.ENDC)
+        print(bcolors.RED + "Invalid command" + bcolors.ENDC)
     
     _save_clients_to_storage()
